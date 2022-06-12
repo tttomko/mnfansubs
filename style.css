@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+Body{
+    background-color: #1d1d1d;
+}
+nav{
+    width: 100%;
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #393939 ;
+    position: relative;
+
+}
+nav .logo{
+    width: 200px;
+    height: 100%;
+}
+nav .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-left: 10px;
+}
+nav .menu{
+    width: 150px;
+    height: 100%;
+    display: flex;
+}
+nav .menu label{
+    width: 33%;
+    height: 100%;
+}
+nav .menu label .menu-item{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left:1px solid #393939;
+}
+nav .menu label .menu-item i{
+    color: #666;
+    font-size: 18px;
+}
+nav .menu label .menu-item:hover i{
+    color: #00b3ff;
+}
+nav .menu label .menu-item .drop{
+    width: 375px;
+    height: 81.38px;
+    background-color: #00b3ff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    display: none;
+    z-index: 100;
+    border-top: 3px solid #00b3ff;
+}
+nav .menu label .menu-item .drop .tom{
+    width: 335px;
+    height: 41.38px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+    display: flex;
+}
+nav .menu label .menu-item .drop .tom .a1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .menu label .menu-item .drop .tom .a1 input{
+    width: 335px;
+    height: 41.38px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+#check{
+    display: none;
+}
+nav .menu label .menu-item #check:checked ~ .drop{
+    display: flex;
+}
+nav .menu label .menu-item .drop .tom .a1 i{
+    color: #222;
+    font-size: 18px;
+    padding-right: 10px;
+}
+nav .menu label .menu-item .drop .tom .a1 i:hover{
+    color: #1e87f0;
+}
+nav .menu label .menu-item .drop2{
+    width: 375px;
+    height: 399px;
+    background-color: #161616;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    display: none;
+    z-index: 100;
+    border-top: 3px solid #00b3ff;
+}
+#check1{
+    display: none;
+}
+nav .menu label .menu-item #check1:checked ~ .drop2{
+    display: flex;
+}
+nav .menu label .menu-item .drop2 .tom{
+    width: 335px;
+    height: 356px;
+    padding: 20px;
+}
+nav .menu label .menu-item .drop2 .tom .a1{
+    width: 335px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    border-bottom:1px dashed rgba(204,204,204,0.2)
+}
+nav .menu label .menu-item .drop2 .tom .a1 .b1{
+    height: 50px;
+    width: 13.3%;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+nav .menu label .menu-item .drop2 .tom .a1 .b1 i{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+}
+nav .menu label .menu-item .drop2 .tom .a1:hover .b1 i{
+    color: #1e87f0;
+}
+nav .menu label .menu-item .drop2 .tom .a1 .c1{
+    width: 86.7%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .menu label .menu-item .drop2 .tom .a1 .c1 p{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+nav .menu label .menu-item .drop2 .tom .a1 .c1 i{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    padding-right: 10px;
+}
+nav .menu label .menu-item .drop2 .tom .a1 .c1:hover i{
+    color: #1e87f0;
+}
+nav .menu label .menu-item .drop2 .tom .a1 .c1:hover p{
+    color: #1e87f0;
+}
+nav .menu label .menu-item .drop3{
+    width: 375px;
+    height: 297px;
+    background-color: #161616;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    display: none;
+    z-index: 100;
+    border-top: 3px solid #00b3ff;
+}
+#check2{
+    display: none;
+}
+nav .menu label .menu-item #check2:checked ~ .drop3{
+    display: flex;
+}
+nav .menu label .menu-item:hover .drop3 .tom{
+    width: 335px;
+    height: 254px;
+    padding: 20px;
+}
+nav .menu label .menu-item .drop3 .tom .a1{
+    width: 335px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    border-bottom:1px dashed rgba(204,204,204,0.2)
+}
+nav .menu label .menu-item .drop3 .tom .a1 .b1{
+    height: 50px;
+    width: 13.3%;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+nav .menu label .menu-item .drop3 .tom .a1 .b1 i{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+}
+nav .menu label .menu-item .drop3 .tom .a1 .c1{
+    width: 86.7%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .menu label .menu-item .drop3 .tom .a1 .c1 p{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+nav .menu label .menu-item .drop3 .tom .a1 .c1 i{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    padding-right: 10px;
+}
+nav .menu label .menu-item .drop3 .tom .a1:hover .b1 i{
+    color: #1e87f0;
+}
+nav .menu label .menu-item .drop3 .tom .a1 .c1:hover i{
+    color: #1e87f0;
+}
+nav .menu label .menu-item .drop3 .tom .a1 .c1:hover p{
+    color: #1e87f0;
+}
+.big{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 200px);
+    gap: 20px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.big .child{
+    border-radius: 10px;
+    position: relative;
+}
+.big .child .text{
+    position:absolute;
+    bottom:0 ;
+    top: 0;
+    right: 0;
+    left:0;
+    display: flex;
+    align-items: flex-end;  
+    background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0.1));
+    border-radius: 10px;
+}
+.big .child .text p{
+    color: white;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+.big .child .text:hover p{
+    color: #1e87f0;
+}
+.big .child img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.mash{
+    width: 80%;
+    margin: auto;
+}
+.mash .tsaash{
+    width: 100%;
+    height: 40px;
+    background-color: #161616;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(153, 153, 153, 0.8);
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+}
+.mash .tsaash:hover{
+    background-color: #00b3ff;
+    color: #fff;
+}
+.mash .tsaash .text p{
+    color: rgba(153, 153, 153, 0.8);
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+}
+.mash .tsaash .text:hover p{
+    color: #fff;
+}
+.mash .op{
+    width: 75%;
+    height: 300x;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mash .op img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mash .a1{
+    width: 100%;
+    height: 40px;
+    background-color: #1d1d1d;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.mash .a1 p{
+    color: #999;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 40px;
+}
+.mash .a1 .icon{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.mash .a1 .icon i{
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+}
+.mash .a1 .icon:hover i{
+    color: #1e87f0;
+}
+.mash .f1{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.mash .f1 .b1{
+    width: 200%;
+    height: 300px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+  }
+.mash .f1 .b1 .c1{
+    width: 16%;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    
+}
+.mash .f1 .b1 .c1 .text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+}
+.mash .f1  .b1 .c1 .text:hover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0,rgba(0,0,0,0.8) 100%);
+}
+.mash .f1 .b1 .c1 .text p{
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    padding-bottom: 25px;
+    display: none;
+}
+.mash .f1 .b1 .c1 .text:hover p{
+    color: #1e87f0;
+    display: block;
+}
+.mash .f1 .b1 .c1 .text2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+}
+.mash .f1 .b1 .c1 .text2 p{
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+    display: none;
+}
+.mash .f1 .b1 .c1 .text2:hover p{
+    color: #999;
+    display: block;
+    font-size: 12px;
+}
+.mash .f1  .b1 .c1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tugsgul{
+    width: 100%;
+    height: 61px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: 1px solid #393939;
+    border-top: 1px solid #393939;
+    margin-top: 20px;
+}
+.tugsgul .logo{
+    width: 10%;
+    height: 100%;
+    display: flex;
+}
+.tugsgul .logo .logo-item{
+    width: 33%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left:1px solid #393939;
+}
+.tugsgul .logo .logo-item i{
+    color: #666;
+    font-size: 20px;
+}
+.tugsgul .logo .logo-item:hover i{
+    color: #1e87f0;
+}
+.end{
+    text-align: center;
+    line-height: 70px;
+    padding: 0 10px;
+    color: #999;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 10px #1d1d1d;
+    border-radius: 10px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+@media screen and (max-width:960px) {
+    .menu{
+        width:150px;
+        height: 100%;
+    }
+    .logo{
+        width: 200px;
+        height: 100%;
+    }
+    .big{
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(4 ,200px);
+    }
+    .mash .f1 .b1{
+        width: 300%;
+    }
+    .mash .f1 .b1 .c1{
+        width: 20%;
+      
+    }
+    .tugsgul .logo .logo-item i{
+        color: #666;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:640px) {
+    .menu{
+        width: 150px;
+        height: 100%;
+    }
+    .logo{
+        width: 200px;
+        height: 100%;
+    }
+    .big{
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, 200px);
+    }
+    .mash .f1 .b1{
+        width: 400%;
+    }
+    .mash .f1 .b1 .c1{
+        width: 30%;
+    }
+}
+@media screen and (max-width:160px) {
+    .menu{
+        width: 150px;
+        height: 100%;
+    }
+    .logo{
+        width: 200px;
+        height: 100%;
+    }
+}
+@media screen and (max-width:450px) {
+    .big{
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(4, 200px);
+    }
+  .mash .f1 .b1{
+    width: 550%;
+  }
+  .mash .f1 .b1 .c1{
+    width: 20%;
+  }
+  .tugsgul .logo .logo-item i{
+    color: #666;
+    font-size: 7px;
+}
+}
